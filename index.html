@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<title>Best Brands</title> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<!-- 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script> -->
+	</head>
+
+	<body>
+
+		<header id="topHeader">
+			<img id="bestBrandsLogo" src="assets/logo-best-brands.png" alt="logo-best-brands" />
+			<img id="btnClose" src="assets/btn-close.png" alt="btn-close" />
+		</header>
+		
+		<div id="content">
+			<div id="mainContent">		
+				<nav>
+					<ul class="navBar">
+						<li><a href="#">Home</a> / </li>
+						<li><a href="#">Existing Service</a> / </li>
+						<li class="active"><a href="#">Mobile</a></li>
+					</ul>
+				</nav>
+
+				<h4>
+					Which Mobile topic would you like help with?
+				</h4>
+
+				<div id="routingGuide">
+					<ul>
+						<li id="iconBilling"><a href="#"><img src="assets/icon-billing.png" alt="icon-billing" /> Billing and Payments
+						</a></li>
+						<li id="iconTechSupport"><a href="#"><img id="iconTechSupport" src="assets/icon-tech-support.png" alt="icon-tech-support" />Technical Support</a></li>
+						<li id="iconLogin"><a href="#"><img src="assets/icon-login.png" alt="icon-login" />Account Login Support</a></li>
+						<li id="iconOther"><a href="#"><img src="assets/icon-other.png" alt="icon-other" />Other</a></li>
+					</ul>
+					<a href="#"><img id="iconBackButton" src="assets/icon-back-button.png" alt="icon-back-button" /><strong>Back</strong></a>				
+				</div>
+				
+				<div id="preChatSurvey" class="hideClass">
+					<form id="chatForm" method="post" action="">
+						<p>
+							<label for="fullName">Full Name:&#42</label>
+							<br>
+							<input id="fullName" class="elementStyling" type="text" name="fullName" placeholder="John Doe">
+							<img id="iconFormAvatar" src="assets/icon-form-avatar.png" alt="icon-form-avatar" />
+							<span id="fullNameRequired" class="hideClass">Full Name is a required field</span>							
+						</p>
+
+						<p>
+							<label for="mobilePhoneNumber">Mobile Phone Number:&#42</label> 
+							<br>
+							<input id="mobilePhoneNumber" class="elementStyling" type="text" name="mobilePhoneNumber" placeholder="ex: 123-123-1234">
+							<img id="iconFormPhone" src="assets/icon-form-phone.png" alt="icon-form-phone" />
+							<span id="mobileNumberRequired" class="hideClass"></span>							
+						</p>	
+
+						<p>
+							<label for="state">State:</label>
+							<br>
+							<select id="states" name = "states">
+							  <option value="default">Select One</option>
+							  <option value="california">California</option>
+							  <option value="oregon">Oregon</option>
+							</select>						
+						</p>
+						
+						<p id="phonePurchaseLoc" class="hideClass">
+							<label for="caPurchased">Was your phone purchased in CA?</label>
+							<br>
+							<select id="caPurchased" name = "caPurchased">
+							  <option value="default">Select One</option>
+							  <option value="yes">Yes</option>
+							  <option value="no">No</option>
+							</select>						
+						</p>						
+							
+						<p>
+							<label for="question">Describe your question...</label>
+							<br>
+							<textarea id="question" class="elementStyling" name="question"></textarea>
+						
+						</p>
+						<p>
+							<input id="startChatButton" type="submit" name="submit" id="submit" value="Start Chat" />
+							<span id="requiredField">&#42 Required field</span>							
+						</p>
+					</form>
+				</div>
+			</div>
+			
+			<div id="preChatSurveyComplete" class="hideClass">
+				<h3> Congratulations!! You have reached the chat agent. </h3>
+			</div>
+			<footer id="theFooter">
+				<img id="logoTc" src="assets/logo-tc.png" alt="logo-tc" />
+			</footer>	
+		</div>
+		<script src="http://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk="   crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>
